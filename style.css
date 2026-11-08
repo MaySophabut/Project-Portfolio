@@ -351,8 +351,8 @@ td {
 .detail p {
   width: 100%;
   text-align: left;
-
   margin-bottom: 3%;
+  font-size: 0.90rem;
 
 }
 
