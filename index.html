@@ -6,18 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <!-- Navigation -->
     <nav class="navbar">
+
+        <div class="sticky-logo">
+            <i class="fa-solid fa-dragon"></i>
+        </div>
+
         <div class="sticky-navbar">
-            <a heref="#" class="sticky-logo">
-                <img src="/elements/temp_logo.png" alt="company logo" />
-            </a>
             <a href="#projects">PROJECTS</a>
             <a href="#about">ABOUT ME</a>
             <a href="#contact">CONTACT</a>
+        </div>
+
+        <div class="resume-btn">
+            <a href="Resume">RESUME</a>
         </div>
     </nav>
 
@@ -38,12 +49,32 @@
     <!-- Project section -->
     <section class="projects">
         <h2>PROJECTS</h2>
-        <p>“relevante informatie die ik graag wil delen over mezelf als student/softwareontwikkelaar”</p>
+        <p>“With a background as an Allround Media Maker, I bring a creative perspective to software development. I want to explore new tools and learn how to combine different techniques into practical and creative solutions. For me, development is all about continuous learning taking my media foundation, blending it with programming technologies, and building better projects.”</p>
+
+        <div class="gallery-container">
+            <div class="gallery">
+                <a href="#img1"><img src="/elements/Pretty girl.jpg" alt="proejct1 pretty dog" style="width:100%"></a>
+                <a href="#img2"><img src="/elements/cute dog.jpg" alt="proejct2 cute dog" style="width:100%"></a>
+            </div>
+
+            <div class="gallery">
+                <a href="#img4"><img src="/elements/working.jpg" alt="proejct5 working dog" style="width:100%"></a>
+                <a href="img5"><img src="/elements/happy.jpg" alt="proejct6 happy dog" style="width:100%"></a>
+            </div>
+
+            <div class="gallery">
+                <a href="vid1"><video src="/elements/Video.mp4" autoplay loop muted playsinline
+                        alt="proejct4 musician kitty" style="width:100%"></video></a>
+                <a href="#img3"><img src="/elements/kitty.jpg" alt="proejct3 side eyes kitty" style="width:100%"></a>
+
+            </div>
+        </div>
     </section>
 
     <!-- Socialmedia -->
     <section class="socials">
-        <p>Keep up with me!</p>
+        <p>Keep up with me</p>
+        <div class="down-arrow"></div>
 
         <div class="social-buttons">
             <button class="github">Github</button>
@@ -53,101 +84,180 @@
 
     <!-- About me -->
     <section class="bout-me">
-        <h3>ABOUT ME</h3>
-        <p>Hello, introduction texts introduction texts introduction texts introduction texts </p>
-    </section>
+        <h3>MY JOURNEY & EXPERIENCE</h3>
+        <p>The start of my design and coding journey. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati ipsam cum aliquid ea, blanditiis saepe beatae eligendi incidunt? Soluta, architecto. Architecto, iusto? Perspiciatis sunt odio vitae.</p>
 
-    <!-- table -->
-    <table>
-        <thead>
-            <tr>
-                <th>School</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Software Developer</td>
-                <td>Techniek College Rotterdam. Schiedam</td>
-                <td>2026-Present</td>
-            </tr>
-            <tr>
-                <td>Allroud Media Maker</td>
-                <td>SintLucas, Eindhoven</td>
-                <td>2020-2023</td>
-            </tr>
-            <tr>
-                <td>ISK(International Transition Class)</td>
-                <td>ROC de Leijgraaf, Uden</td>
-                <td>2018-2020</td>
-            </tr>
+        <!--experience table -->
+        <div class="experience-container">
+        <sub>EXPERIENCE</sub>
+        <p>Where I've worked, what I've learned, and the programs I've used.</p>
+        </div>
+
+        <!-- table -->
+        <table>
             <thead>
                 <tr>
-                    <th>Work Experience</th>
+                    <th>COMPANY</th>
+                    <th>POSITION</th>
+                    <th>PERIOD</th>
                 </tr>
             </thead>
-        <tbody>
-            <tr>
-                <td>Cinema Host</td>
-                <td>Kinepolis, Oss</td>
-                <td>November 2025-Present</td>
-            </tr>
-            <tr>
-                <td>Internship</td>
-                <td>Golazo Brands, Eindhoven</td>
-                <td>2020-2023</td>
-            </tr>
-            <tr>
-                <td>Internship</td>
-                <td>Kampert Nauta Studio, Oss</td>
-                <td>2018-2020</td>
-            </tr>
-            <tr>
-                <td>Multitasking Restaurant Staff </td>
-                <td>Gossimijne, Oss</td>
-                <td>2019-2023</td>
-            </tr>
-        </tbody>
-    </table>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="company">
+                            <img src="elements/Golazo brand.png" alt="Golazo logo">
+                            <strong>Golazo Brands</strong>
+                        </div>
+                    </td>
+                    <td>Creative DTP Intern</td>
+                    <td>September 2022 - January 2023</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <div class="detail">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed dicta illo animi
+                                eius? Ea temporibus, enim nisi est dolore nulla tempore ad tenetur ratione. Sunt
+                                nesciunt quae sapiente.
+                            </p>
+                            <div class="program-used">
+                                <span>InDesign</span>
+                                <span>Photoshop</span>
+                                <span>After Effects</span>
+                                <span>Illustrator</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="company">
+                            <img src="elements/KN-logo-canvas.png" alt="Kampert Nauta Studido logo">
+                            <strong>Kampert Nauta Studio</strong>
+                        </div>
+                    </td>
+                    <td>Desktop Publishing Intern</td>
+                    <td>February 2021 - June 2021</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <div class="detail">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat numquam, asperiores
+                                consequatur saepe voluptatem similique animi quis. Repellendus quaerat officia nihil
+                                odio culpa. Eius consequatur sed earum minus ullam error.
+                            </p>
+
+                            <div class="program-used">
+                                <span>InDesign</span>
+                                <span>Photoshop</span>
+                                <span>Illustrator</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+        </table>
+
+        <!--School-->
+        <div class="school-container">
+            <sub>ACADEMIC</sub>
+            <p>My learning journey lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+
+            <div class="school">
+                <img src="elements/Techniek-College-Rotterdam-Logo.png">
+                <p class="school-name">Techniek College Rotterdam</p>
+                <p>Major: Software Developer</p>
+                <p><i class="fa-solid fa-calendar-days"></i>September 2026 - Present</p>
+            </div>
+
+            <div class="school">
+                <img src="elements/sintlucas-logo-png_seeklogo-272288.png">
+                <p class="school-name">SintLucas</p>
+                <p>Major: Allround Media Maker</p>
+                <p><i class="fa-solid fa-graduation-cap"></i>Graduated in June 2023</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact pagina-->
     <section class="contact">
         <h4>SAWADIKA~
             <br>LET'S GET IN TOUCH!
         </h4>
+
+        <div class="contact-box">
+
+            <div class="contact-header">
+                <span>New Message</span>
+
+            </div>
+
+            <form class="email-content">
+
+                <div class="to">
+                    <label for="recipient">To:</label>
+                    <input type="text" id="recipient" name="recipient" value="may.sophabut@gmail.com" readonly>
+                </div>
+
+                <div class="from">
+                    <label for="sender-email">From:</label>
+                    <input type="email" id="sender-email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="subject">
+                    <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+                </div>
+
+                <textarea id="message" name="message" rows="8" placeholder="Your message.." required></textarea>
+
+                <div class="send-btn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+
+        </div>
+
     </section>
 
     <!-- Interview -->
-    <section class="interview">
+    <section class="title-interview">
         <h5>INTERVIEW
             <br>with
             <br>YUSHIKA
         </h5>
-        <img src="/elements/Giraaf.jpg" alt="picture of giraaf">
+        <div class="interview">
+            <img src="/elements/pas foto.jpg" alt="picture of interviewe">
 
-        <p>Last but not least, I'm taking you with me to meet my classmate, Yushika. Here is my short interview with
-            her about our course.<br><br>
-            Hello Yushika, How are you doing today? "I'm good, thank you" could you tell us why or how did you come
-            to
-            choose this program? how did you find out aboout it?
-            “I am already at this school doing ICT at Level 2 and I also like the school. I enjoy coding and want to
-            work with it in the future.”
-            What kind of job do you want later?
-            “Mmm, a data analyst or a cybersecurity specialist.”
-            Do you want to continue studying after this?
-            “Yes, but I am not entirely sure yet.”
-            Later in our second year we're going to do internship. Where would you like to do your internship?
-            “Preferably abroad.”
-            Do you have any idea which country yet?
-            “Maybe in Japan, Spain, or England, but definitely not in the Netherlands.”
-            Thank you Yushika~
-        </p>
+            <p>Last but not least, I'm taking you with me to meet my classmate, Yushika. Here is my short interview with
+                her about our course.<br><br>
+                Hello Yushika, How are you doing today? "I'm good, thank you" could you tell us why or how did you come
+                to
+                choose this program? how did you find out aboout it?
+                “I am already at this school doing ICT at Level 2 and I also like the school.
+                I enjoy coding and want to
+                work with it in the future.”
+                What kind of job do you want later?
+                “Mmm, a data analyst or a cybersecurity specialist.”
+                Do you want to continue studying after this?
+                “Yes, but I am not entirely sure yet.”<br>
+                Later in our second year we're going to do internship. Where would you like to do your internship?
+                “Preferably abroad.”
+                Do you have any idea which country yet?
+                “Maybe in Japan, Spain, or England, but definitely not in the Netherlands.”<br>
+                Thank you Yushika~
+            </p>
+        </div>
 
     </section>
     <!-- Footer section -->
     <footer>
         <section class="footer-section">
-            <p>Thank you for vistitting!</p>
-            <P>Made with &#128151;</P>
+            <div class="thanks">Thank you for visiting!</div>
+            <p>Made with &#128151;</p>
             </main>
 </body>
 
